@@ -17,7 +17,7 @@ namespace ClientMVC.Controllers
         // GET: Clients
         public async Task<IActionResult> Index()
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             List<Client> ClientInfo = new List<Client>();
             using (var myClient = new HttpClient())
             {
@@ -49,7 +49,7 @@ namespace ClientMVC.Controllers
         // GET: Clients/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
@@ -95,7 +95,7 @@ namespace ClientMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,firstName,lastName,phoneNumber,email,address")] Client client)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
@@ -133,7 +133,7 @@ namespace ClientMVC.Controllers
         // GET: Clients/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
@@ -173,7 +173,7 @@ namespace ClientMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,firstName,lastName,phoneNumber,email,address")] Client client)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
@@ -211,7 +211,7 @@ namespace ClientMVC.Controllers
         // GET: Clients/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
@@ -249,7 +249,7 @@ namespace ClientMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            string Baseurl = "http://localhost:5000";
+            string Baseurl = "http://172.31.84.38";
             Client ClientInfo = new Client();
             using (var myClient = new HttpClient())
             {
