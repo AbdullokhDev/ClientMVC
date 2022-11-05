@@ -3,6 +3,8 @@ Description=Start the Website
 
 [Service]
 WorkingDirectory=/home/ubuntu/app/
+ExecStartPre=/usr/bin/chmod 777 -R /home/ubuntu/app
+ExecStartPre=/usr/bin/dotnet publish /home/ubuntu/app -o /home/ubuntu/app/build
 ExecStart=/usr/bin/dotnet /home/ubuntu/app/build/ClientMVC.dll
 Restart=always
 RestartSec=10
