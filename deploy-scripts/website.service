@@ -2,6 +2,7 @@
 Description=Start the Website
 
 [Service]
+User=root
 WorkingDirectory=/home/ubuntu/app/
 ExecStartPre=/usr/bin/chmod 777 -R /home/ubuntu/app
 ExecStartPre=/usr/bin/dotnet publish /home/ubuntu/app -o /home/ubuntu/app/build
