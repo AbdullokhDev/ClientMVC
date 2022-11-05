@@ -1,3 +1,4 @@
+#!usr/bin/bash
 sudo chmod 777 -R ../
 dotnet publish ../ -o ../build
 systemctl enable website.service
